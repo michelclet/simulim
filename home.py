@@ -19,7 +19,7 @@ duree = st.number_input("Durée du prêt (années)", value=25)
 apport = st.number_input("Apport personnel", value=60000)
 
 # revenus = 4500
-revenus = st.number_input("Revenus mensuel", value=2500)
+revenus = st.number_input("Revenus mensuels (net avant impôts)", value=2500)
 
 assurance = 50
 credit = 0
