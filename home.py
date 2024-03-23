@@ -18,10 +18,9 @@ credit = 0
 output = capacite_resultat(taux, duree, apport, assurance, revenus, credit, endettement)
 st.text("Prix du bien " + str(output['bien']) + " €")
 st.text("Mensualités " + str(output['mensualite']) + " €")
-
+st.divider()
 st.text("Frais de notaire " + str(output['notaire']) + " €")
 st.text("Frais de dossier " + str(output['dossier']) + " €")
-st.divider()
 st.text("Frais de garantie " + str(output['garantie']) + " €")
 st.text("Coût du prêt " + str(output['pret']) + " €")
 st.text("Coût de l'assurance " + str(assurance*12*duree) + " €")
@@ -34,3 +33,5 @@ st.text("Coût total du projet " + str(
     output['interets'] +
     assurance*12*duree
     ) + " €")
+st.divider()
+st.text("Calcul des mensualités: (coût total du prêt + coût des intérêt) / durée en mois.")
