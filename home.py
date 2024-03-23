@@ -18,13 +18,13 @@ credit = 0
 output = capacite_resultat(taux, duree, apport, assurance, revenus, credit, endettement)
 st.divider()
 st.text("Prix du bien " + str(output['bien']) + " €")
-st.text("Mensualités " + str(output['mensualite']) + " €")
+st.text("Mensualités (assurance comprise)" + str(output['mensualite']) + " €")
 st.divider()
 st.text("Frais de notaire " + str(output['notaire']) + " €")
 st.text("Frais de dossier " + str(output['dossier']) + " €")
 st.text("Frais de garantie " + str(output['garantie']) + " €")
 st.text("Coût du prêt " + str(output['pret']) + " €")
-st.text("Coût de l'assurance " + str(assurance*12*duree) + " €")
+st.text("Coût de l'assurance " + str(assurance*12*duree) + " € (" + str(assurance) + " €/mois)")
 st.text("Coût des intérêts du prêt " + str(output['interets']) + " €")
 st.text("Coût total du projet " + str(
     output['notaire'] +
