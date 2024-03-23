@@ -18,7 +18,7 @@ credit = 0
 output = capacite_resultat(taux, duree, apport, assurance, revenus, credit, endettement)
 st.divider()
 st.text("Prix du bien " + str(output['bien']) + " €")
-st.text("Mensualités (assurance comprise)" + str(output['mensualite']) + " €")
+st.text("Mensualités (assurance comprise) " + str(output['mensualite']) + " €")
 st.divider()
 st.text("Frais de notaire " + str(output['notaire']) + " €")
 st.text("Frais de dossier " + str(output['dossier']) + " €")
