@@ -35,4 +35,4 @@ st.text("Coût total du projet " + str(
     assurance*12*duree
     ) + " €")
 st.divider()
-st.text("Calcul des mensualités: (coût total du prêt + coût des intérêt) / durée en mois.")
+st.text("Calcul des mensualités: (coût du prêt + coût des intérêt) / durée en mois.")
