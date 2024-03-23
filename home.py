@@ -16,6 +16,7 @@ assurance = 50
 credit = 0
 
 output = capacite_resultat(taux, duree, apport, assurance, revenus, credit, endettement)
+st.divider()
 st.text("Prix du bien " + str(output['bien']) + " €")
 st.text("Mensualités " + str(output['mensualite']) + " €")
 st.divider()
