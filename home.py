@@ -10,8 +10,8 @@ st.title("Ma capacité d'emprunt")
 taux = st.number_input("Taux d'emprunt [%]", value=4.00)
 duree = st.number_input("Durée du prêt (années) [€]", value=25)
 apport = st.number_input("Apport personnel [€]", value=60000)
-revenus = st.number_input("Revenus mensuels (net avant impôts) [€]", value=2500)
-endettement = st.number_input("Taux d'endettement (max 35%) [%]", value=33)
+revenus = st.number_input("Revenus mensuels (net avant impôts) [€]", value=3500)
+endettement = st.number_input("Taux d'endettement (max 35%) [%]", value=34)
 assurance = 50
 credit = 0
 
@@ -24,4 +24,4 @@ st.text("Frais de garantie " + str(output['garantie']) + " €")
 st.text("Coût du prêt " + str(output['pret']) + " €")
 st.text("Coût de l'assurance " + str(assurance*12*duree) + " €")
 st.text("Coût des intérêts du prêt " + str(output['interets']) + " €")
-st.text("Montant prêt + intérêts " + str(output['pret']) + output['interets']) + " €")
+st.text("Coût prêt + intérêts " + str(output['pret']) + output['interets']) + " €")
